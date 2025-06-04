@@ -1,9 +1,9 @@
 name: icon_file
 description: A Flutter widget to display file icons with extensions.
-version: 0.0.1
-homepage: https://github.com/your_username/icon_file
-repository: https://github.com/your_username/icon_file
-issue_tracker: https://github.com/your_username/icon_file/issues
+version: 0.0.3
+homepage: https://github.com/Ahmedha91/icon_file
+repository: https://github.com/Ahmedha91/icon_file
+issue_tracker: https://github.com/Ahmedha91/icon_file/issues
 
 environment:
   sdk: ">=2.17.0 <4.0.0"
@@ -11,8 +11,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_screenutil: ^5.0.0+2
-  flutter_svg: ^2.0.7
+  flutter_screenutil: ^5.9.3
+  flutter_svg: ^2.1.0
 
 dev_dependencies:
   flutter_test:
@@ -22,3 +22,5 @@ flutter:
   uses-material-design: true
   assets:
     - assets/file.svg
+    - assets/screenshots/capture_1.png
+    - assets/screenshots/capture_2.png

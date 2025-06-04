@@ -56,7 +56,6 @@ class FileIconDemo extends StatelessWidget {
         children: [
           _buildSectionTitle('🗂️ Fichiers par défaut'),
           _buildGrid(files.map((f) => FileIcon(f)).toList(), files),
-
           SizedBox(height: 24.h),
           _buildSectionTitle('🎨 Personnalisé (couleur / style)'),
           _buildGrid([
@@ -78,7 +77,11 @@ class FileIconDemo extends StatelessWidget {
               color: Colors.black,
               extensionStyle: TextStyle(color: Colors.white, fontSize: 10.sp),
             ),
-          ], ['custom.pdf', 'image.png (sans extension)', 'darkmode.css']),
+          ], [
+            'custom.pdf',
+            'image.png (sans extension)',
+            'darkmode.css'
+          ]),
         ],
       ),
     );

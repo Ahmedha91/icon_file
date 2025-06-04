@@ -56,7 +56,6 @@ class FileIconDemo extends StatelessWidget {
         children: [
           _buildSectionTitle('🗂️ Fichiers par défaut'),
           _buildGrid(files.map((f) => FileIcon(f)).toList(), files),
-
           SizedBox(height: 24.h),
           _buildSectionTitle('🎨 Personnalisé (couleur / style)'),
           _buildGrid([
@@ -78,7 +77,53 @@ class FileIconDemo extends StatelessWidget {
               color: Colors.black,
               extensionStyle: TextStyle(color: Colors.white, fontSize: 10.sp),
             ),
-          ], ['custom.pdf', 'image.png (sans extension)', 'darkmode.css']),
+          ], [
+            'custom.pdf',
+            'image.png (sans extension)',
+            'darkmode.css'
+          ]),
+          SizedBox(height: 24.h),
+          _buildSectionTitle('🔍 Variations de taille et forme'),
+          _buildGrid([
+            FileIcon(
+              'small.txt',
+              size: 30,
+            ),
+            FileIcon(
+              'medium.json',
+              size: 50,
+            ),
+            FileIcon(
+              'large.dart',
+              size: 70,
+            ),
+            FileIcon(
+              'rounded.pdf',
+              roundedLabel: true,
+            ),
+            FileIcon(
+              'square.zip',
+              roundedLabel: false,
+            ),
+            FileIcon(
+              'custom.svg',
+              size: 60,
+              roundedLabel: false,
+              color: Colors.teal,
+              extensionStyle: TextStyle(
+                color: Colors.white,
+                fontSize: 10.sp,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ], [
+            '30px',
+            '50px',
+            '70px',
+            'Étiquette arrondie',
+            'Étiquette carrée',
+            'Taille + couleur + style',
+          ]),
         ],
       ),
     );
